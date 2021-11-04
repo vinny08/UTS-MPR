@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdc8"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:layout_marginBottom="10pt"
+        android:background="#c9fb91"
+        android:fontFamily="cursive"
+        tools:text="Empty"
+        android:textAlignment="center"
+        android:textSize="20pt" />
+
+    <ScrollView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/name1"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/money" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Pilih Mata Uang yang diinginkan"
+        android:layout_marginTop="5pt"
+        android:layout_below="@+id/pic"
+        android:textSize="12pt"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc1"
+        android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_marginLeft="50pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="Ringgit Malaysia" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_marginLeft="50pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="Dollar Singapore" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Masukan Jumlah Nilai Rupiah yang akan ditukar"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/group"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc2"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="5pt"
+        android:background="#fffde9"
+        android:textAlignment="center"
+        android:hint="Jumlah Nilai Rupiah"
+        android:textSize="15pt"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/value"
+        android:text="convert"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="50pt"
+        android:layout_marginRight="50pt"/>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdc8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        android:background="#c9fb91"
+        android:fontFamily="cursive"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textSize="20pt" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to"
+        android:layout_below="@+id/welcome"
+        android:textSize="20pt"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:background="#c9fb91"
+        />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Money Changer"
+        android:layout_below="@+id/to"
+        android:textSize="20pt"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:background="#c9fb91"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Name"
+        android:layout_marginTop="10pt"
+        android:layout_below="@+id/money"
+        android:textSize="12pt"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5pt"
+        android:layout_marginEnd="16dp"
+        android:background="#fffde9"
+        android:textAlignment="center"
+        android:textSize="15pt" />
+
+    <Button
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="50pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginRight="50pt"
+        android:text="Start" />
+
+
+</RelativeLayout>
