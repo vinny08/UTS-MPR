@@ -1,0 +1,15 @@
+com/example/moneychanger/MainActivity2.java
+ com.example.moneychanger.MainActivity2
+ com.example.moneychanger.MainActivity2$1
+com/example/moneychanger/BuildConfig.java
+ com.example.moneychanger.BuildConfig
+com/example/moneychanger/MainActivity.java
+ com.example.moneychanger.MainActivity
+ com.example.moneychanger.MainActivity$1
+com/example/moneychanger/DialogFrag.java
+ com.example.moneychanger.DialogFrag
+ com.example.moneychanger.DialogFrag$1
+com/example/moneychanger/MainActivity3.java
+ com.example.moneychanger.MainActivity3
+ com.example.moneychanger.MainActivity3$1
+ com.example.moneychanger.MainActivity3$2
